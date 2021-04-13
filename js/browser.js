@@ -3,19 +3,10 @@
  */
 'use strict';
 
-const fs = require('fs');
-const path = require('path');
-
-const context = JSON.parse(
-  fs.readFileSync(
-    path.join(__dirname, '..', 'contexts', 'webkms-v1.jsonld'),
-    {encoding: 'utf8'}
-  )
-);
-
 const constants = require('./constants');
-const {CONTEXT_URL, CBORLD_VALUE} = constants;
+const context = require('../contexts/webkms-v1.jsonld');
 
+const {CONTEXT_URL, CBORLD_VALUE} = constants;
 const contexts = new Map();
 contexts.set(constants.CONTEXT_URL, context);
 

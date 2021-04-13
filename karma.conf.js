@@ -1,8 +1,12 @@
+/*!
+ * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ */
+'use strict';
 module.exports = function(config) {
   const bundler = process.env.BUNDLER || 'webpack';
   const frameworks = ['mocha', 'chai'];
 
-  const files = ['unit/*.js'];
+  const files = ['*.spec.js'];
 
   // browser launchers: https://npmjs.org/browse/keyword/karma-launcher
   // browsers: ['ChromeHeadless', 'Chrome', 'Firefox', 'Safari'],
@@ -26,7 +30,7 @@ module.exports = function(config) {
     frameworks,
     files,
     reporters,
-    basePath: '',
+    basePath: 'test',
     port: 9876,
     colors: true,
     browsers,
@@ -47,16 +51,23 @@ module.exports = function(config) {
     // available preprocessors:
     // https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'unit/*.js': preprocessors,
+      './*.js': preprocessors,
     },
 
     webpack: {
       devtool: 'inline-source-map',
       mode: 'development',
+      module: {
+        rules: [
+          {
+            test: /\.jsonld$/,
+            loader: 'json-loader'
+          }
+        ]
+      },
       node: {
         Buffer: false,
         crypto: false,
-        setImmediate: false,
         util: false
       }
     }
