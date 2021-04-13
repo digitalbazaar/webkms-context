@@ -1,28 +1,28 @@
 {
-  "name": "context-template",
+  "name": "webkms-context",
   "version": "0.0.1",
-  "description": "Context template repository.",
-  "main": "js",
-  "module": "./dist/context.esm.js",
+  "description": "A WebKMS context library for JavaScript.",
+  "main": "lib/index.js",
+  "module": "./dist/module.js",
   "files": [
     "contexts",
-    "dist/context.js",
-    "dist/context.esm.js",
-    "js"
+    "dist",
+    "js/constants.js",
+    "js/index.js"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/digitalbazaar/context-template"
+    "url": "https://github.com/digitalbazaar/webkms-context"
   },
   "bugs": {
-    "url": "https://github.com/digitalbazaar/context-template/issues"
+    "url": "https://github.com/digitalbazaar/webkms-context/issues"
   },
   "author": {
     "name": "Digital Bazaar, Inc.",
     "email": "support@digitalbazaar.com",
     "url": "https://digitalbazaar.com/"
   },
-  "homepage": "https://github.com/digitalbazaar/context-template#readme",
+  "homepage": "https://github.com/digitalbazaar/webkms-context#readme",
   "license": "BSD-3-Clause",
   "devDependencies": {
     "@babel/core": "^7.11.0",
@@ -50,13 +50,16 @@
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
+  "engines": {
+    "node": ">=12"
+  },
   "scripts": {
     "build": "npm run clean && webpack && rollup -c",
     "clean": "rm -rf dist/*",
     "lint": "eslint js test",
     "prepare": "npm run build",
     "test": "npm run lint && npm run build && npm run test-node && npm run test-karma",
-    "test-karma": "karma start test/karma.conf.js",
+    "test-karma": "karma start karma.conf.js",
     "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks test/**/*.spec.js"
   }
 }
