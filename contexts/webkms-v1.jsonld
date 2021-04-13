@@ -1,6 +1,22 @@
 {
   "@context": {
     "id": "@id",
-    "type": "@type"
+    "type": "@type",
+    "@protected": true,
+
+    "AesKeyWrappingKey2019": "https://w3id.org/security#AesKeyWrappingKey2019",
+    "DeleteKeyOperation": "https://w3id.org/security#DeleteKeyOperation",
+    "DeriveSecretOperation": "https://w3id.org/security#DeriveSecretOperation",
+    "ExportKeyOperation": "https://w3id.org/security#ExportKeyOperation",
+    "GenerateKeyOperation": "https://w3id.org/security#GenerateKeyOperation",
+    "KmsOperation": "https://w3id.org/security#KmsOperation",
+    "Sha256HmacKey2019": "https://w3id.org/security#Sha256HmacKey2019",
+    "SignOperation": "https://w3id.org/security#SignOperation",
+    "UnwrapKeyOperation": "https://w3id.org/security#UnwrapKeyOperation",
+    "VerifyOperation": "https://w3id.org/security#VerifyOperation",
+    "WrapKeyOperation": "https://w3id.org/security#WrapKeyOperation",
+    "kmsModule": {"@id": "https://w3id.org/security#kmsModule"},
+    "unwrappedKey": "https://w3id.org/security#unwrappedKey",
+    "wrappedKey": "https://w3id.org/security#wrappedKey"
   }
 }
