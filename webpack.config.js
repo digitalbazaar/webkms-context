@@ -4,10 +4,11 @@
 'use strict';
 module.exports = {
   output: {
-    libraryTarget: 'commonjs'
+    libraryTarget: 'commonjs',
+    filename: 'context.js'
   },
   mode: 'production',
-  entry: './js/browser.js',
+  entry: './js/index.js',
   module: {
     rules: [
       {

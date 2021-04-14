@@ -2,13 +2,12 @@
   "name": "webkms-context",
   "version": "0.0.1",
   "description": "A WebKMS context library for JavaScript.",
-  "main": "js",
-  "module": "./dist/module.js",
+  "main": "js/index.js",
+  "module": "./dist/context.esm.js",
   "files": [
     "contexts",
-    "dist",
-    "js/constants.js",
-    "js/index.js"
+    "dist/context.js",
+    "js"
   ],
   "repository": {
     "type": "git",
@@ -54,12 +53,13 @@
     "node": ">=12"
   },
   "scripts": {
-    "build": "npm run clean && webpack && rollup -c",
-    "clean": "rm -rf dist/*",
+    "build": "npm run clean && npm run serialize && webpack && rollup -c",
+    "clean": "rm -rf dist/* && rm -rf contexts/*",
     "lint": "eslint js test",
     "prepare": "npm run build",
+    "serialize": "node bin/serialize.js",
     "test": "npm run lint && npm run build && npm run test-node && npm run test-karma",
-    "test-karma": "karma start karma.conf.js",
-    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks test/**/*.spec.js"
+    "test-karma": "karma start test/karma.conf.js",
+    "test-node": "cross-env NODE_ENV=test mocha --preserve-symlinks test/*.spec.js"
   }
 }
