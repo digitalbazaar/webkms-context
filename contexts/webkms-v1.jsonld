@@ -16,7 +16,9 @@
     "UnwrapKeyOperation": "https://w3id.org/security#UnwrapKeyOperation",
     "VerifyOperation": "https://w3id.org/security#VerifyOperation",
     "WrapKeyOperation": "https://w3id.org/security#WrapKeyOperation",
-    "invocationTarget": "https://w3id.org/security#invocationTarget",
+    "invocationTarget": {
+      "@id": "https://w3id.org/security#invocationTarget", "@type": "@id"
+    },
     "kmsModule": "https://w3id.org/security#kmsModule",
     "publicKey": "https://w3id.org/security#publicKey",
     "signatureValue": "https://w3id.org/security#signatureValue",
