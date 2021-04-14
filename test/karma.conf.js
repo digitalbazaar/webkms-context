@@ -30,7 +30,7 @@ module.exports = function(config) {
     frameworks,
     files,
     reporters,
-    basePath: 'test',
+    basePath: '',
     port: 9876,
     colors: true,
     browsers,
