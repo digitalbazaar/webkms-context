@@ -23,7 +23,9 @@ module.exports = {
       '@id': 'https://w3id.org/security#invocationTarget', '@type': '@id'
     },
     kmsModule: 'https://w3id.org/security#kmsModule',
-    publicKey: 'https://w3id.org/security#publicKey',
+    publicKey: {
+      '@id': 'https://w3id.org/security#publicKey', '@type': '@id'
+    },
     signatureValue: 'https://w3id.org/security#signatureValue',
     unwrappedKey: 'https://w3id.org/security#unwrappedKey',
     verifyData: 'https://w3id.org/security#verifyData',
