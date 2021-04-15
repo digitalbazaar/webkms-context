@@ -26,6 +26,10 @@ module.exports = {
     publicKey: {
       '@id': 'https://w3id.org/security#publicKey', '@type': '@id'
     },
+    revoked: {
+      '@id': 'https://w3id.org/security#revoked',
+      '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'
+    },
     signatureValue: 'https://w3id.org/security#signatureValue',
     unwrappedKey: 'https://w3id.org/security#unwrappedKey',
     verifyData: 'https://w3id.org/security#verifyData',
