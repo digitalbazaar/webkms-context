@@ -1,6 +1,6 @@
 {
   "name": "webkms-context",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A WebKMS context library for JavaScript.",
   "main": "js/index.js",
   "module": "./dist/context.esm.js",
