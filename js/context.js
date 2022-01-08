@@ -1,5 +1,5 @@
 /*!
- * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2021-2022 Digital Bazaar, Inc. All rights reserved.
  */
 'use strict';
 
@@ -16,6 +16,7 @@ module.exports = {
     KmsOperation: 'https://w3id.org/security#KmsOperation',
     RevokeKeyOperation: 'https://w3id.org/security#RevokeKeyOperation',
     SignOperation: 'https://w3id.org/security#SignOperation',
+    UpdateKeyOperation: 'https://w3id.org/security#UpdateKeyOperation',
     UnwrapKeyOperation: 'https://w3id.org/security#UnwrapKeyOperation',
     VerifyOperation: 'https://w3id.org/security#VerifyOperation',
     WrapKeyOperation: 'https://w3id.org/security#WrapKeyOperation',
@@ -26,6 +27,11 @@ module.exports = {
     publicKey: {
       '@id': 'https://w3id.org/security#publicKey', '@type': '@id'
     },
+    publicAlias: {
+      '@id': 'https://w3id.org/security#publicAlias',
+      '@type': '@id'
+    },
+    publicAliasTemplate: 'https://w3id.org/security#publicAliasTemplate',
     revoked: {
       '@id': 'https://w3id.org/security#revoked',
       '@type': 'http://www.w3.org/2001/XMLSchema#dateTime'
