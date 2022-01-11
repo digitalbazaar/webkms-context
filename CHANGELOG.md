@@ -12,6 +12,9 @@
   generation to generate the public key ID from variables that appear
   in the key's public description.
 
+### Changed
+- **BREAKING**: Published package under `@digitalbazaar/webkms-context`.
+
 ## 1.0.0 - 2021-04-16
 
 Initial version.
