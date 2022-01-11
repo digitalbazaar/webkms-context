@@ -1,6 +1,6 @@
 # webkms-context ChangeLog
 
-## 2.0.0 - 2022-01-xx
+## 2.0.0 - 2022-01-11
 
 ### Added
 - **BREAKING**: Add `publicAlias` and `publicAliasTemplate` terms. The
