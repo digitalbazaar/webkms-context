@@ -24,6 +24,10 @@ module.exports = {
       '@id': 'https://w3id.org/security#invocationTarget', '@type': '@id'
     },
     kmsModule: 'https://w3id.org/security#kmsModule',
+    maxCapabilityChainLength: {
+      '@id': 'https://w3id.org/security#maxCapabilityChainLength',
+      '@type': 'http://www.w3.org/2001/XMLSchema#integer'
+    },
     publicKey: {
       '@id': 'https://w3id.org/security#publicKey', '@type': '@id'
     },

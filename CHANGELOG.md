@@ -1,5 +1,13 @@
 # webkms-context ChangeLog
 
+## 2.1.0 - 2022-01-xx
+
+### Added
+- Add `maxCapabilityChainLength` term. This is a new term and not a
+  breaking change. This term can be used to express the maximum
+  acceptable length of a capability chain used in capability
+  invocations at a particular invocation target (i.e., at a key URL).
+
 ## 2.0.0 - 2022-01-11
 
 ### Added
