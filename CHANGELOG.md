@@ -1,6 +1,6 @@
 # webkms-context ChangeLog
 
-## 2.1.0 - 2022-01-xx
+## 2.1.0 - 2022-01-14
 
 ### Added
 - Add `maxCapabilityChainLength` term. This is a new term and not a
