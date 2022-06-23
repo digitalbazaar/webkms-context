@@ -23,6 +23,9 @@ module.exports = {
     invocationTarget: {
       '@id': 'https://w3id.org/security#invocationTarget', '@type': '@id'
     },
+    keyParameters: {
+      '@id': 'https://w3id.org/security#keyParameters', '@type': '@json'
+    },
     kmsModule: 'https://w3id.org/security#kmsModule',
     maxCapabilityChainLength: {
       '@id': 'https://w3id.org/security#maxCapabilityChainLength',
